@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#logo {
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: sans-serif;
+    background: conic-gradient(
+    from 220deg at 55% 17%,
+    transparent 0,
+    #daf6ff 9%,
+    #f4ecff 17%,
+    transparent 10%
+  );
+  -webkit-font-smoothing: antialiased;
+}
+
+.menu-bar{
+    text-align: center;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 30px;
+}
