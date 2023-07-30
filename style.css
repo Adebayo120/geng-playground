@@ -1,19 +1,20 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
 #logo {
-    text-decoration: none;
+  text-decoration: none;
+  color: black;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-body{
-    font-family: sans-serif;
-    background: conic-gradient(
+body {
+  font-family: sans-serif;
+  background: conic-gradient(
     from 220deg at 55% 17%,
     transparent 0,
     #daf6ff 9%,
@@ -23,18 +24,117 @@ body{
   -webkit-font-smoothing: antialiased;
 }
 
-.menu-bar{
-    text-align: center;
+.menu-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2.4rem;
+  width: 100%;
 }
 
-.menu-bar ul{
-    display: inline-flex;
-    list-style: none;
-    color: black;
+.menu-bar.sticky {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.logodiv {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+.button-div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
-.menu-bar ul li{
-    width: 120px;
-    margin: 15px;
-    padding: 30px;
+.menu-bar ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+  color: black;
+}
+
+.start-button {
+  padding: 0.8rem 1.4rem;
+  background-color: #12324b;
+  border-radius: 3px;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.start-button:hover {
+  background-color: #215b89;
+}
+
+.log-button {
+  padding: 0.8rem 1.4rem;
+  background-color: white;
+  color: black;
+  border-style: none;
+  cursor: pointer;
+}
+
+.main-body {
+  width: 48rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.unlock {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+  background: linear-gradient(160deg, #0d1633 18.91%, #06f 82.02%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.connect-contents {
+  font-family: "Inter", sans-serif;
+  line-height: 1.75;
+  font-size: 1.3rem;
+}
+
+.top-div-button {
+  text-align: center;
+  margin-top: 2rem;
+  padding-bottom: 20rem;
+}
+.start-a-button {
+  padding: 1.25rem 1.75rem;
+  margin-right: 2.5rem;
+  color: white;
+  background: linear-gradient(264.2deg, #1f50ff -4.76%, #8c56ff 100%);
+  border-style: none;
+  font-size: 1.1rem;
+  border-radius: 0.4rem;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+
+.start-a-button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+.book-button {
+  color: #0775ff;
+  padding: 0.3rem;
+  background: transparent;
+  border-style: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+.book-button:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #0775ff;
 }
